@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../assets/movix-logo.svg'
+import logo from '../../assets/movix-logo.png'
 import { GoSearch } from 'react-icons/go'
 import { BiMenu } from 'react-icons/bi'
 import { RxCross2 } from 'react-icons/rx'
@@ -84,7 +84,7 @@ const Header = () => {
     <header className={'w-full font-poppins fixed top-0 left-[50%] bg-slate-950  translate-x-[-50%] z-20 backdrop-blur-sm transition-all  ' + (isOpen && " bg-opacity-100 ") + (show && " bg-opacity-100 ") + (!isOpen && !show && " bg-opacity-40 ") + (hide && " top-[-100px] ")} >
       <div className='max-w-screen-2xl w-full mx-auto px-4 md:px-6 py-2 sm:py-1 flex justify-between items-center relative z-20' >
         <div className='w-28 sm:w-40 z-50 py-1' >
-          <img onClick={goHome} className='w-full cursor-pointer' src={logo} alt='logo' />
+          <p onClick={goHome} className="text-orange-500 h-[30px] cursor-pointer w-full font-bold flex items-center justify-center flex-row ml-1"> <span className='mr-1 font-bold rounded-full bg-white w-8 h-8 flex items-center justify-center flex-row'>S</span>treamSphere</p>
         </div>
         <div className='text-white flex gap-8' >
           <ul className={`flex gap-3 pl-6 sm:pl-0 sm:gap-8 flex-col sm:flex-row absolute top-0 left-0 sm:static bg-slate-950 sm:bg-transparent py-4 sm:py-0 w-full sm:items-center z-0 transition-all sm:opacity-100 sm:border-b-0  ${isOpen ? "top-full opacity-100 border-b border-orange-300 border-opacity-40" : " top-[-100px] opacity-0 "}`} >

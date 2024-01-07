@@ -17,7 +17,7 @@ const DetailsBanner = ({ video, crew }) => {
 
     const trailer = video?.filter((v) => (v.type === 'Trailer'))
 
-    document.title = data ? data?.title || data?.name : "Moviea"
+    document.title = data ? data?.title || data?.name : "StreamSphere"
 
     const itemGenres = data?.genres.map((g) => g.id)
 

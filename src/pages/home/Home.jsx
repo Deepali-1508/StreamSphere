@@ -5,7 +5,7 @@ import Popular from './popular/Popular'
 import TopRated from './topRated/TopRated'
 
 const Home = () => {
-  document.title = "Moviea"
+  document.title = "SteamSphere"
   return (
     <div className='bg-slate-900 text-white font-poppins min-h-screen'>
       <HeroBanner />
